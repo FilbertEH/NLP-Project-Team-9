@@ -14,6 +14,17 @@ tqdm
 # Excel reader (for Bank Indonesia JISDOR data)
 openpyxl
 
-# EDA & visualization (optional, for notebooks)
+# Machine learning & classical NLP vectorization
+scikit-learn
+scipy
+joblib
+nltk
+
+# Time-series & gradient-boosted baselines
+statsmodels
+xgboost
+
+# EDA & visualization (for notebooks and reports)
 matplotlib
+seaborn
 jupyter

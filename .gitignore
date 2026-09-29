@@ -36,6 +36,11 @@ __pycache__/
 # data/raw/
 *.jsonl
 
+# Ignore full raw datasets
+data/raw/
+*.parquet
+*.pq
+
 # Block intermediate pipeline tables
 data/interim/
 
@@ -85,3 +90,9 @@ $RECYCLE.BIN/
 credentials.json
 *-credentials.json
 service_account.json
+
+# -------------
+# Explicitly track samples
+!data/samples/
+!data/samples/*.parquet
+!data/samples/*.csv
