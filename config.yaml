@@ -1,0 +1,60 @@
+date_range:
+  start: "2021-09-01"
+  end: "2026-09-01"
+
+timezone: "Asia/Jakarta"  # UTC+7 (WIB)
+
+sites:
+  - kontan
+  - bisnis
+  - cnbc_indonesia
+
+# Only retain macro, financial, market, and national/international desks
+sections:
+  kontan:
+    - "nasional"
+    - "internasional"
+    - "keuangan"
+    - "investasi"
+  bisnis:
+    - "ekonomi"
+    - "market"
+    - "kabar24"
+  cnbc_indonesia:
+    - "news"
+    - "market"
+    - "research"
+
+# GDELT GKG thematic event prefixes relevant to macroeconomics and geopolitics
+relevant_theme_prefixes:
+  - "ECON_"
+  - "EPU_"
+  - "TAX_FNCACT"
+  - "ARMEDCONFLICT"
+  - "SANCTIONS"
+  - "MILITARY"
+  - "TRADE"
+  - "CRISISLEX"
+
+# Maximum full-text scrape targets per outlet per calendar day
+daily_cap_per_site: 30
+
+# Web scraper parameters
+scraping:
+  min_delay_seconds: 1.0
+  max_delay_seconds: 3.0
+  max_retries: 3
+  timeout_seconds: 15
+  user_agent: "Mozilla/5.0 (compatible; NLPCourseProjectBot/1.0; contact: your_email@student.ugm.ac.id)"
+
+fx:
+  source: "Bank Indonesia JISDOR"
+  raw_file: "data/raw/jisdor/jisdor_raw.xlsx"
+
+alignment:
+  cutoff_time_wib: "10:00"
+
+paths:
+  raw_dir: "data/raw"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"

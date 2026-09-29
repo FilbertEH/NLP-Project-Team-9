@@ -1,0 +1,19 @@
+# Core data processing & Parquet storage
+pandas
+numpy
+pyarrow
+pyyaml
+python-dateutil
+
+# Web scraping & HTML parsing
+requests
+beautifulsoup4
+lxml
+tqdm
+
+# Excel reader (for Bank Indonesia JISDOR data)
+openpyxl
+
+# EDA & visualization (optional, for notebooks)
+matplotlib
+jupyter

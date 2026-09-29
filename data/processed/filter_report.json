@@ -1,0 +1,83 @@
+{
+  "stages": [
+    {
+      "stage": "raw_pulled",
+      "count": 432553
+    },
+    {
+      "stage": "after_url_dedupe",
+      "count": 432526
+    },
+    {
+      "stage": "after_section_filter",
+      "count": 221610,
+      "dropped_sections_sample": {
+        "finansial": 30869,
+        "lifestyle": 19894,
+        "momsmoney": 19186,
+        "insight": 15585,
+        "bola": 14132,
+        "koran": 13657,
+        "bandung": 11048,
+        "sumatra": 11042,
+        "teknologi": 10499,
+        "pressrelease": 8033,
+        "jakarta": 6968,
+        "otomotif": 6554,
+        "surabaya": 5730,
+        "semarang": 5138,
+        "foto": 4988,
+        "entrepreneur": 3869,
+        "industri": 3306,
+        "bali": 3196,
+        "hijau": 2611,
+        "aktual": 2003
+      }
+    },
+    {
+      "stage": "after_theme_filter",
+      "count": 215356
+    },
+    {
+      "stage": "scrape_queue_after_daily_cap",
+      "count": 61103,
+      "daily_cap_per_site": 30
+    },
+    {
+      "stage": "id_headlines_raw",
+      "count": 215356
+    },
+    {
+      "stage": "id_headlines_after_empty_title_drop",
+      "count": 215356
+    },
+    {
+      "stage": "id_headlines_after_cross_site_title_dedupe",
+      "count": 215040
+    },
+    {
+      "stage": "bodies_scraped",
+      "count": 0
+    },
+    {
+      "stage": "id_headlines_raw",
+      "count": 215356
+    },
+    {
+      "stage": "id_headlines_after_empty_title_drop",
+      "count": 215356
+    },
+    {
+      "stage": "id_headlines_after_cross_site_title_dedupe",
+      "count": 215040
+    },
+    {
+      "stage": "bodies_scraped",
+      "count": 19777
+    },
+    {
+      "stage": "bodies_after_boilerplate_and_length_filter",
+      "count": 19775
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "articles_loaded": 215040,
+  "articles_on_or_after_start": 215040,
+  "articles_after_last_fixing_dropped": 0,
+  "articles_aligned": 215040,
+  "alignment_cases": {
+    "after_cutoff": 137419,
+    "non_trading_day": 40816,
+    "same_day": 36805
+  },
+  "cutoff_time_wib": "10:00"
+}

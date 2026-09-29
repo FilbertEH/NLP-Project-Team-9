@@ -1,0 +1,88 @@
+# ==========================================
+# Environments & Packages
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Python Bytecode & Cache
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==========================================
+# Large Data Files & Datasets
+# ==========================================
+# Block all Parquet files across the entire repository
+*.parquet
+
+# Block full raw pulls, scraped articles, and failed logs
+data/raw/
+*.jsonl
+
+# Block intermediate pipeline tables
+data/interim/
+
+# Block raw Excel sheets (e.g. JISDOR export)
+*.xlsx
+*.xls
+
+# data/processed/articles_aligned/
+
+# !data/raw_sample/
+
+# ==========================================
+# Jupyter Notebooks & Caches
+# ==========================================
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==========================================
+# Operating System & IDE Artifacts
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_office.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDEs (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+*.env
+credentials.json
+*-credentials.json
+service_account.json
