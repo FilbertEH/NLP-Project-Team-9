@@ -50,6 +50,8 @@ data/interim/
 
 # data/processed/articles_aligned/
 
+repo_samples
+
 # !data/raw_sample/
 
 # ==========================================
