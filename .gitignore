@@ -33,8 +33,7 @@ __pycache__/
 # Block all Parquet files across the entire repository
 *.parquet
 
-# Block full raw pulls, scraped articles, and failed logs
-data/raw/
+# data/raw/
 *.jsonl
 
 # Block intermediate pipeline tables
